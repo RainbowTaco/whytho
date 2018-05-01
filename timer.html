@@ -3,15 +3,12 @@
 		<title>TimeR FOr MATh</title>
 	</head>
 	<body>
-		<p id="timer">
-			AHY DON'T KKNOW ENTER THE AMOUNT O' SECONDS!
-		</p>
 		<script>
 			var timer = parseInt(prompt("How many seconds?"));
 			timer;
 			timer++;
 			for(; timer >= 0; timer--) {
-				document.getElementById("timer").innerHtml = ("Timer: " + timer);
+				document.write(timer);
 			}
 			timer;
 		</script>
