@@ -8,10 +8,12 @@
 		</p>
 		<script>
 			var timer = parseInt(prompt("How many seconds?"));
+			timer;
 			timer++;
 			for(; timer >= 0; timer--) {
-				document.getElementById("timer").innerHtml = timer;
+				document.getElementById("timer").innerHtml = ("Timer: " + timer);
 			}
+			timer;
 		</script>
 	</body>
 </html>
