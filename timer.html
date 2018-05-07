@@ -3,15 +3,16 @@
 		<title>TimeR FOr MATh</title>
 	</head>
 	<body>
+		<canvas id="screen" width="800" height="600">Well, there was SUPPOSED to be a timer here but uhhh... deel wif et?</canvas>
 		<script>
+			var screen = document.getElementById("screen");
+			var ctx = screen.getContent("2d");
+			ctx.font = "30px Arial";
 			var timer = parseInt(prompt("How many seconds?"));
-			timer;
-			timer++;
 			for(; timer >= 0; timer--) {
-				document.open();
-				document.write(timer);
+				ctx.clearRect(0, 0, screen.width, screen.height);
+				ctx.fillText(timer);
 			}
-			timer;
 		</script>
 	</body>
 </html>
